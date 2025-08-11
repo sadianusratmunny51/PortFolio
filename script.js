@@ -113,6 +113,17 @@ document.getElementById('soaring-btn').addEventListener('click', () => {
 });
 
 
+const contactForm = document.getElementById('contact-form');
 
+contactForm.addEventListener('submit', function(event) {
+  // ফর্ম সাবমিট হলে পেজ রিলোড হওয়া থেকে আটকানোর জন্য
+  event.preventDefault();
+
+  // এখানে আপনি আপনার মেসেজ পাঠানোর লজিক যুক্ত করতে পারেন।
+  // যেমন: fetch() API ব্যবহার করে সার্ভারে ডেটা পাঠানো।
+
+  // মেসেজটি সফলভাবে পাঠানো হয়েছে তা বোঝানোর জন্য একটি অ্যালার্ট দেখানো হচ্ছে
+  alert('Message Sent Successfully!');
+});
 
 

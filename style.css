@@ -10,6 +10,7 @@
   font-family: "Poppins", sans-serif;
 }
 
+
 :root {
   --bg-color: #081b29;
   --second-bg-color: #112e42;
@@ -48,6 +49,8 @@ body {
     font-weight: 600;
 
 }
+
+/*  */
 
 .navbar a {
     /* background: green; */
@@ -231,13 +234,14 @@ section {
 }
 
 .about-img img {
-  width: clamp(200px, 30vw, 450px); /* min: 200px, preferred: 30% viewport width, max: 350px */
-  height: auto;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  border: 1rem solid var(--main-color) ;
+  border: 1rem solid var(--main-color);
   box-shadow: 0 0 15px var(--main-color), 0 0 15px var(--main-color);
 }
+
 
 .about-text{
     /* background-color: red; */
@@ -348,7 +352,7 @@ section {
   border-radius: 10px;
   font-size: 1.5rem;
   cursor: pointer;
-  overflow: hidden; /* ::before যেন বক্সের বাইরে না যায় */
+  overflow: hidden; 
   transition: color 0.3s ease;
 }
 .education-content .content .title{
@@ -369,7 +373,7 @@ section {
   position: absolute;
   top: 0;
   left: 0;
-  width: 0; /* শুরুতে কোন overlay নেই */
+  width: 0; 
   height: 100%;
   background: var(--second-bg-color);
   z-index: -1;
@@ -378,19 +382,19 @@ section {
 }
 
 .education-content .content:hover::before {
-  width: 100%; /* hover এ overlay পুরো বক্স ঢেকে যাবে */
+  width: 100%; 
 }
 
 .education-content .content:hover {
-  color: var(--text-color); /* text color change করতে চাইলে */
-  z-index: 1; /* hover এ text উপরে থাকবে */
+  color: var(--text-color);
+  z-index: 1;
   transition: color 0.5s ease;
   box-shadow: 0 0 15px var(--main-color), 0 0 15px var(--main-color);
 
 }
 
 
-/* ছোট স্ক্রিনে ১ কলাম */
+
 @media (max-width: 600px) {
   .education-content {
     grid-template-columns: 1fr;
@@ -403,7 +407,7 @@ section {
     display: inline-flex;
     /* background-color: red; */
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* বড় স্ক্রিনে ২ কলাম */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 6rem;
     justify-content: space-between;
 
@@ -416,13 +420,13 @@ section {
   position: relative;
   background: var(--bg-color);
   color: white;
-  border:0.2rem solid var(--main-color);
+  /* border:0.2rem solid var(--main-color); */
   padding: 2rem;
   text-align: center;
   border-radius: 10px;
   font-size: 1.5rem;
   /* cursor: pointer; */
-  overflow: hidden; /* ::beforeযেন বক্সের বাইরে না যায় */
+  overflow: hidden; 
   transition: color 0.3s ease;
 }
 /* .skills-content .content .inner-heading{
@@ -433,12 +437,12 @@ section {
 
 
 
-.skills-content .content:hover{
+/* .skills-content .content:hover{
      box-shadow: 0 0 15px var(--main-color), 0 0 15px var(--main-color);
-}
+} */
 .skills-content .content .inner-content{
     background: var(--second-bg-color);
-    border:0.2rem solid var(--main-color);
+    /* border:0.2rem solid var(--main-color); */
     margin:2rem;
     border-radius: 10px;
 
@@ -454,6 +458,9 @@ section {
 
 .skills-content .content .inner-content p{
   color: aqua;
+}
+.languages-grid .inner-content{
+    margin:20rem;
 }
 
 
@@ -476,7 +483,7 @@ section {
     color: var(--text-color);
     text-align: center;
     padding: 1rem;
-    border-radius: 0.5rem;
+    /* border-radius: 0.5rem; */
     font-size: 1.6rem;
     font-weight: 500;
     aspect-ratio: 1 / 1; 
@@ -527,7 +534,7 @@ section {
 
 
 .inner-content i{
-  font-size: 10rem;
+  font-size: 5rem;
 }
 .inner-content span {
   font-size: 2rem;
@@ -670,4 +677,118 @@ section {
   .other-projects {
     grid-template-columns: 1fr;
   }
+}
+
+.contact {
+  background: var(--second-bg-color);
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem 9%;
+}
+
+.contact-info,
+.contact-form {
+  flex: 1 1 45rem;
+  padding: 2rem;
+  background: var(--bg-color);
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow);
+}
+
+.contact-info .title,
+.contact-form .title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: var(--main-color);
+}
+
+.contact-info .info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.contact-info .info-item i {
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  color: var(--main-color);
+}
+
+.contact-info .info-item span {
+  font-size: 1.6rem;
+}
+
+.social-media-contact {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+
+.social-media-contact a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+  border: .2rem solid var(--main-color);
+  border-radius: 50%;
+  color: var(--main-color);
+  font-size: 2rem;
+  transition: .3s;
+}
+
+.social-media-contact a:hover {
+  background: var(--main-color);
+  color: var(--text-color);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  background: var(--second-bg-color);
+  border: .1rem solid var(--second-bg-color);
+  border-radius: .5rem;
+  color: var(--text-color);
+  font-size: 1.6rem;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: var(--second-text-color);
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form .btn {
+  background: var(--main-color);
+  color: var(--white-color);
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: .3s;
+}
+
+.contact-form .btn:hover {
+  background: var(--bg-color);
+  color: var(--main-color);
+  border: .1rem solid var(--main-color);
 }
