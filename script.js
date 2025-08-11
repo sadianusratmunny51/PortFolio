@@ -1,3 +1,6 @@
+
+
+//image animation
 const aboutImg = document.querySelector('.about-img');
 
 const observer = new IntersectionObserver((entries) => {
@@ -6,12 +9,12 @@ const observer = new IntersectionObserver((entries) => {
       aboutImg.classList.add('animate');
     }
   });
-}, { threshold: 0.5 }); // starts when 50% visible
+}, { threshold: 0.5 });
 
 observer.observe(aboutImg);
 
 
-
+//hover effecr  percentage calculation
 document.querySelectorAll('.inner-content').forEach(box => {
   const percent = parseInt(box.getAttribute('data-percent'), 10);
   const progressBar = box.querySelector('.progress-bar');
@@ -31,7 +34,7 @@ document.querySelectorAll('.inner-content').forEach(box => {
       } else {
         clearInterval(countInterval);
       }
-    }, 15); // speed of number increase
+    }, 15);
   });
 
   box.addEventListener('mouseleave', () => {
@@ -41,6 +44,8 @@ document.querySelectorAll('.inner-content').forEach(box => {
   });
 });
 
+
+//typing effect 
 document.addEventListener("DOMContentLoaded", () => {
   const text = "Software Engineering Student";
   const typingElement = document.getElementById("typing-text");
@@ -50,11 +55,10 @@ document.addEventListener("DOMContentLoaded", () => {
     if (index < text.length) {
       typingElement.textContent += text.charAt(index);
       index++;
-      setTimeout(type, 150); // 100ms delay between each character
+      setTimeout(type, 150); 
     }
   }
 
-  // Clear text first and start typing effect
   typingElement.textContent = "";
   type();
 });
@@ -116,14 +120,12 @@ document.getElementById('soaring-btn').addEventListener('click', () => {
 const contactForm = document.getElementById('contact-form');
 
 contactForm.addEventListener('submit', function(event) {
-  // ফর্ম সাবমিট হলে পেজ রিলোড হওয়া থেকে আটকানোর জন্য
+
   event.preventDefault();
 
-  // এখানে আপনি আপনার মেসেজ পাঠানোর লজিক যুক্ত করতে পারেন।
-  // যেমন: fetch() API ব্যবহার করে সার্ভারে ডেটা পাঠানো।
 
-  // মেসেজটি সফলভাবে পাঠানো হয়েছে তা বোঝানোর জন্য একটি অ্যালার্ট দেখানো হচ্ছে
-  alert('Message Sent Successfully!');
+  alert('Message Sent Successfully');
 });
+
 
 
