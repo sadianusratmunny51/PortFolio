@@ -1,444 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PortFolio-Sadia Nusrat Munny</title>
-    <link rel="stylesheet" href="style.css">
-
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#081b29">
+  <meta name="description" content="Sadia Nusrat Munny — Software Engineering student at SUST. Explore full-stack web and mobile projects, explainable AI research, and competitive programming.">
+  <title>Sadia Nusrat Munny | Software Engineering & Research</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 48 48%22%3E%3Crect width=%2248%22 height=%2248%22 rx=%2210%22 fill=%22%23081b29%22/%3E%3Ctext x=%2211%22 y=%2235%22 fill=%22%2354d2ff%22 font-family=%22Arial%22 font-size=%2236%22 font-weight=%22700%22%3Es%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <header class="header">
-        <a href="#" class="logo">Name</a>
-
-        <div class="bx bx-menu" id="menu-icon"></div>
-
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>  
-    <section class="home" id="home">
-        <div class="home-content">
-            <h1>Hi, I'm <span>Sadia Nusrat</span></h1>
-            <div class="text-animate">
-                <h3 id="typing-text">Software Engineering Student</h3>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus at cupiditate laborum quae facere debitis ipsam quasi, natus quibusdam officiis fugit repellat veniam totam asperiores doloremque nobis.</p>
-            <div class="btn-box">
-                <a href="#" class="btn">Hire Me</a>
-                <a href="#" class="btn">Let's Talk</a>
-            </div>
-
-            <div class="social-media">
-                <a href="#"> <i class='bx bxl-facebook'></i></a>
-                <a href="#"> <i class='bx bxl-twitter'></i></a>
-                <a href="#"> <i class='bx bxl-linkedin'></i></a>
-                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
-
-            </div>
-
-        </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="header">
+    <a class="logo" href="#home" aria-label="Sadia Munny, home">sadia<span>.</span><span class="logo-surname">munny</span></a>
+    <button class="menu-toggle" id="menu-icon" type="button" aria-controls="primary-navigation" aria-expanded="false" hidden><span class="menu-lines" aria-hidden="true"></span><span class="menu-label">Menu</span></button>
+    <nav class="navbar" id="primary-navigation" aria-label="Main navigation">
+      <a href="#home" class="active" aria-current="location">Home</a><a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="home" id="home" aria-labelledby="home-title">
+      <div class="home-content">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Software engineering · SUST</p>
+        <h1 id="home-title">Hi, I’m<br>Sadia Nusrat<br><span>Munny.</span></h1>
+        <p class="home-role">Developer. Problem solver. Researcher.</p>
+        <p class="home-description">From thoughtful web and mobile experiences to explainable AI, I build software with curiosity, care, and a strong foundation in problem solving.</p>
+        <div class="btn-box"><a class="btn primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a><a class="btn" href="Munny_CV_v3.pdf" download>Download CV <span aria-hidden="true">↓</span></a></div>
+        <div class="social-media" aria-label="Social profiles"><a href="https://github.com/sadianusratmunny51" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://linkedin.com/in/sadia-nusrat-munny-a669b0435/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://codeforces.com/profile/InfiniteBugs" target="_blank" rel="noopener noreferrer">Codeforces <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <div class="hero-caption"><span class="caption-line"></span><span>Based in Sylhet, Bangladesh<br><strong>Building. Learning. Exploring.</strong></span></div>
+      <a class="scroll-cue" href="#about">Get to know me <span aria-hidden="true">↓</span></a>
     </section>
 
-    <!-- about me -->
-     <section class="about" id="about">
-       
-        <h2 class="heading">About <span>Me</span></h2>
-
-        <div class="about-content">
-            <div class="about-img">
-               <img src="image.png" alt="">
-
-             </div>
-            <div class="about-text">
-                <h2 style="color:#00abf0;"> Mst. Sadia Nusrat Munny</h2>
-                <h4>I am currently a 3rd-year, 1st-semester student </h4>
-                <h3 style="color: aqua;">  Shahjalal University of Science and Technology (SUST), Sylhet</h3>
-                 <p>
-                    Passionate about <span style="color:#00abf0;">web development</span>, 
-                    I specialize in <span style="color:#00abf0;">web development</span> and have a
-                     strong eye for <span style="color:#00abf0;">UI/UX design</span>.
-                 </p>
-                 <p>
-                    With a solid foundation in 
-                    problem-solving and a consistent track record 
-                    of excellent academic results, I strive to create intuitive
-                    and user-friendly digital experiences. Always eager to learn
-                    and grow, I am dedicated to delivering high-quality work and 
-                    staying updated with the latest trends in web technologies.
-                 </p>
-            </div>
-
+    <section class="about section-shell" id="about" aria-labelledby="about-title">
+      <div class="section-heading"><p class="eyebrow">01 / A little introduction</p><h2 class="heading" id="about-title">About <span>me.</span></h2></div>
+      <div class="about-content">
+        <div class="about-visual"><div class="about-img"><img src="image.png" alt="A photographer holding a camera" width="350" height="350" loading="lazy"></div><p class="portrait-caption">Curiosity meets purposeful code.</p></div>
+        <div class="about-text"><p class="eyebrow">Mst. Sadia Nusrat Munny</p><h3>Turning ideas into<br>useful experiences.</h3>
+          <p>I’m pursuing a B.Sc. in Software Engineering at Shahjalal University of Science and Technology (SUST). My work spans full-stack web development, Flutter applications, and research in machine learning and retrieval-augmented generation.</p>
+          <p>Competitive programming has shaped how I approach complex problems. I bring that same persistence to building intuitive interfaces, working with data, and collaborating on software that serves real needs.</p>
+          <div class="about-facts"><span>Sylhet, Bangladesh</span><a href="mailto:sadiamunny51@gmail.com">Let’s connect <span aria-hidden="true">↗</span></a></div>
         </div>
-        
-     </section>
+      </div>
+      <dl class="stats"><div><dt>CGPA / 4.00</dt><dd>3.93<span>Through 6th semester</span></dd></div><div><dt>Academic standing</dt><dd>2nd<span>Among 50 students</span></dd></div><div><dt>Problems solved</dt><dd>1,200+<span>Across five coding platforms</span></dd></div></dl>
+      <div class="highlights">
+        <article class="highlight-card"><span class="card-kicker">Competition highlight · 2024</span><h3>NASA Space App Challenge</h3><p><strong>2nd Runner-up, Sylhet Region</strong> with SUST Brainstormers.</p><a href="https://drive.google.com/file/d/1cFFISp-OyXLKgYzjLh-IKTagpZcRIqP4/view?usp=sharing" target="_blank" rel="noopener noreferrer">View certificate <span aria-hidden="true">↗</span></a></article>
+        <article class="highlight-card"><span class="card-kicker">Community & leadership</span><h3>Vice President</h3><p><strong>Student Association of Thakurgaon, SUST.</strong> Contributing to student coordination, organizational activities, and community initiatives.</p></article>
+        <article class="highlight-card"><span class="card-kicker">Competitions & participation</span><h3>Learning through challenges</h3><ul class="plain-list"><li>CODEX Community Hackathon</li><li>SUST CSE Carnival 2026</li><li>IUT 12th ICT Fest Preliminary Round</li></ul></article>
+      </div>
+    </section>
 
-     <!-- Education -->
-
-     <section class="education" id="education">
-        <h2 class="heading">My <span>Journey</span></h2>
-        
-        <div class="education-content">
-            <div class="content" id="block1">
-                 <h1 class="title" style="text-align: center;">Graduation-University</h1>
-                 <h3 class="session"> <i class="bx bx-calendar"></i> 2021-continue</h3>
-                 <h2 class="institue"> Shahjalal University of Science and Technology</h2>
-                 <h3 class="institute"> Department of Software Engineering </h3>
-                 <p class="details">
-                    I began my journey here in 2023, currently in 3rd-year,1st-semester
-                     stepping into the world of Software Engineering with curiosity and 
-                     ambition. Since then, I have been growing my skills, building 
-                     projects, and shaping my vision for the future.
-
-                 </p>
-
-            </div>
-            <div class="content" id="block2">
-                <h1 class="title" style="text-align: center;">Higher Secondary-College</h1>
-                 <h3 class="session"> <i class="bx bx-calendar"></i> 20219-2021</h3>
-                 <h2 class="institue"> Rajshahi Govt. Womens College</h2>
-                 <h3 class="institute"> Sceince Group </h3>
-                 <p class="details">
-                   i have completed Higher Secondary (2019–2021) 
-                  with a GPA of 5.00. Actively participated in numerous public
-                  speaking events, showcasing effective communication skills
-                  and confidence. Demonstrated leadership and teamwork
-                  abilities through involvement in various extracurricular activities.
-                 </p>
-            </div>
-            <div class="content" id="block3">
-                 <h1 class="title" style="text-align: center;"> Secondary-High School</h1>
-                 <h3 class="session"> <i class="bx bx-calendar"></i> 2014-2018</h3>
-                 <h2 class="institue"> Baliadangi Pilot model High School</h2>
-                 <h3 class="institute"> Sceince Group </h3>
-                 <p class="details">
-                   i have completed Secondary (2014-2019) 
-                  with a GPA of 5.00 and also got general Board Scolarship Actively participated in numerous competition like debate 
-                 , showcasing showing science project , participating 
-                 school level IT competitions.
-                  
-                 </p>
-                </div>
-            <div class="content" id="block4">
-                 <h1 class="title" style="text-align: center;"> Primary-High School</h1>
-                 <h3 class="session"> <i class="bx bx-calendar"></i> 2008-2013</h3>
-                 <h2 class="institue">Kalmegh Govt. Primary School</h2>
-                 <h3 class="institute"> Group </h3>
-                 <p class="details">
-                  i have completed Primary schooling (2008-2013) 
-                  with a GPA of 5.00 and also got Talentpul Board Scolarship.
-                  Actively participated in the hand writting  competition ,
-                  Eassy writting competition and won some prizes.
-                  
-                 </p> 
-             </div>
+    <section class="education section-shell" id="education" aria-labelledby="education-title">
+      <div class="section-heading"><p class="eyebrow">02 / The foundations</p><h2 class="heading" id="education-title">My <span>journey.</span></h2><p>A foundation in engineering, built on a love of learning.</p></div>
+      <div class="education-content">
+        <article class="content university" id="block1"><div class="card-topline"><span class="card-kicker">University</span><span class="session">2023 – Present</span></div><h3>Shahjalal University of Science and Technology</h3><p class="degree">B.Sc. in Software Engineering</p><p class="academic-result">CGPA <strong>3.93 / 4.00</strong><span>2nd among 50 students · Through 6th semester</span></p><h4>Relevant coursework</h4><ul class="coursework"><li>Data Structures</li><li>Object-Oriented Programming</li><li>Operating Systems</li><li>Computer Networking</li><li>Design Patterns</li><li>Artificial Intelligence</li><li>Software Verification and Validation</li><li>Distributed Systems</li></ul></article>
+        <div class="education-history">
+          <article class="content" id="block2"><div class="card-topline"><span class="card-kicker">Higher secondary</span><span class="session">2019 – 2021</span></div><h3>Rajshahi Govt. Women’s College</h3><p class="degree">Science · GPA 5.00</p><p>Developed communication and teamwork skills through public speaking and extracurricular activities.</p></article>
+          <article class="content" id="block3"><div class="card-topline"><span class="card-kicker">Secondary</span></div><h3>Baliadangi Pilot Model High School</h3><p class="degree">Science · GPA 5.00 · General Board Scholarship</p><p>Participated in debate, science projects, and school-level IT competitions.</p></article>
+          <article class="content" id="block4"><div class="card-topline"><span class="card-kicker">Primary</span><span class="session">2008 – 2013</span></div><h3>Kalmegh Govt. Primary School</h3><p class="degree">GPA 5.00 · Talent Pool Board Scholarship</p><p>Explored creativity through handwriting and essay-writing competitions.</p></article>
         </div>
+      </div>
+    </section>
 
+    <section class="skills section-shell" id="skills" aria-labelledby="skills-title">
+      <div class="section-heading"><p class="eyebrow">03 / What I work with</p><h2 class="heading" id="skills-title">My <span>skills.</span></h2><p>From the first line of code to a working product.</p></div>
+      <div class="skills-content">
+        <div class="expertise"><h3 class="column-heading">Areas of focus</h3>
+          <article class="expertise-card"><span class="skill-symbol" aria-hidden="true">{ }</span><h4>Problem solving</h4><p>Solved <strong>1,200+ problems</strong> across Codeforces, CodeChef, LeetCode, LightOJ, and VJudge.</p><a href="https://codeforces.com/profile/InfiniteBugs" target="_blank" rel="noopener noreferrer">InfiniteBugs on Codeforces <span aria-hidden="true">↗</span></a></article>
+          <article class="expertise-card"><span class="skill-symbol" aria-hidden="true">&lt;/&gt;</span><h4>Web development</h4><p>Responsive interfaces, authentication, RESTful APIs, and database design for full-stack applications.</p><a href="#projects">Explore web projects <span aria-hidden="true">↗</span></a></article>
+          <article class="expertise-card"><span class="skill-symbol" aria-hidden="true">AI</span><h4>Machine learning & research</h4><p>Data analysis, explainable ML/DL, and evidence-grounded AI using RAG and agent orchestration.</p><a href="#research-project">Explore research <span aria-hidden="true">↗</span></a></article>
+          <article class="expertise-card"><span class="skill-symbol" aria-hidden="true">↗</span><h4>Mobile & game development</h4><p>Flutter apps with cloud services and visualizations, alongside interactive games built with Java and LibGDX.</p><a href="https://github.com/sadianusratmunny51/SWE250_Project.git" target="_blank" rel="noopener noreferrer">Explore TrackEase <span aria-hidden="true">↗</span></a></article>
+        </div>
+        <div class="toolkit"><h3 class="column-heading">Technical toolkit</h3><article class="skill-group"><h4><span>01</span>Languages</h4><ul class="tags" aria-label="Technologies"><li>C</li><li>C++</li><li>Java</li><li>JavaScript</li><li>Python</li><li>Dart</li><li>SQL</li></ul></article>
+<article class="skill-group"><h4><span>02</span>Frontend & mobile</h4><ul class="tags" aria-label="Technologies"><li>React</li><li>HTML</li><li>CSS</li><li>Tailwind CSS</li><li>Flutter</li></ul></article>
+<article class="skill-group"><h4><span>03</span>Backend & APIs</h4><ul class="tags" aria-label="Technologies"><li>Node.js</li><li>Express</li><li>RESTful APIs</li><li>JWT authentication</li></ul></article>
+<article class="skill-group"><h4><span>04</span>Databases & services</h4><ul class="tags" aria-label="Technologies"><li>MySQL</li><li>PostgreSQL</li><li>MongoDB</li><li>Firebase</li></ul></article>
+<article class="skill-group"><h4><span>05</span>Testing & automation</h4><ul class="tags" aria-label="Technologies"><li>JUnit</li><li>Selenium</li></ul></article>
+<article class="skill-group"><h4><span>06</span>DevOps & deployment</h4><ul class="tags" aria-label="Technologies"><li>Docker</li><li>Vercel</li></ul></article>
+<article class="skill-group"><h4><span>07</span>Data analysis</h4><ul class="tags" aria-label="Technologies"><li>NumPy</li><li>Pandas</li><li>Matplotlib</li><li>Seaborn</li><li>Exploratory Data Analysis (EDA)</li></ul></article>
+<article class="skill-group"><h4><span>08</span>AI & machine learning</h4><ul class="tags" aria-label="Technologies"><li>Keras</li><li>TensorFlow</li><li>LangChain</li><li>LangGraph</li><li>RAG</li><li>ML/DL model training</li></ul></article>
+<article class="skill-group"><h4><span>09</span>Tools</h4><ul class="tags" aria-label="Technologies"><li>Git & GitHub</li><li>Hadoop</li><li>Postman</li><li>VS Code</li><li>Jupyter Notebook</li><li>Google Colab</li></ul></article>
+        </div>
+      </div>
+    </section>
 
-     </section>
+    <section class="projects section-shell" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading"><p class="eyebrow">04 / Selected work</p><h2 class="heading" id="projects-title">Projects & <span>research.</span></h2><p>Practical applications, creative experiments, and questions worth exploring.</p></div>
+      <div class="project-toolbar" hidden>
+        <div class="project-filters" role="group" aria-label="Filter projects">
+          <button type="button" data-project-filter="all" aria-pressed="true">All work</button>
+          <button type="button" data-project-filter="software" aria-pressed="false">Web &amp; apps</button>
+          <button type="button" data-project-filter="research" aria-pressed="false">Research</button>
+          <button type="button" data-project-filter="games" aria-pressed="false">Games</button>
+        </div>
+        <p class="project-count" id="project-count" role="status" aria-live="polite">10 of 10 projects</p>
+      </div>
+      <div class="projects-container">
+        <div class="recent-project-section"><h3 class="column-heading">Featured project</h3>
+          <article class="recent-project" data-project-category="software"><div class="project-art" aria-hidden="true"><div class="art-grid"></div><span class="art-label">SUST / CAMPUS SPACES</span><div class="venue-illustration"><span></span><span></span><span></span><span></span><span></span><span></span></div><span class="art-bottom">Find a space. Make it happen. <b>↗</b></span></div><div class="featured-body"><div class="card-topline"><span class="card-kicker">Full-stack web platform</span><span class="session">Jan – Aug 2026</span></div><h3>SUST Spot Booking</h3><p>A platform for discovering and booking on-campus venues at SUST.</p><p>Contributed to user authentication, profile management, database design, and frontend development, collaborating with teammates responsible for backend and administrative functionality.</p><h4>Interfaces I helped build</h4><ul class="features-list"><li>Authentication and user profiles</li><li>Venue browsing, availability, and bookings</li><li>Events, blogs, and notifications</li></ul><ul class="tags" aria-label="Technologies"><li>React</li><li>Vite</li><li>Tailwind CSS</li><li>Node.js</li><li>Express</li><li>MySQL</li></ul><div class="project-links"><a href="https://swe350-sust-spot-booking.vercel.app/" target="_blank" rel="noopener noreferrer">Live site <span aria-hidden="true">↗</span></a><a href="https://github.com/mohaiminulnirob/swe350-sust-spot-booking.git" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div></div></article>
+        </div>
+        <div class="other-projects-section"><h3 class="column-heading">More projects & research</h3><div class="other-projects">
+          <article class="project-box" data-project-category="research" id="research-project"><div class="card-topline"><span class="card-kicker">Research</span><span class="session">Jan 2026 – Present</span></div><h3>Explainable Machine Learning Framework</h3><p class="project-status"><span class="status-dot" aria-hidden="true"></span>In revision · Heliyon (Elsevier)</p><div class="research-meta">Journal details in CV: impact factor 3.6 · Q1</div><p>A leakage-free ML/DL framework studying social media’s effect on academic performance across four independent, cross-country datasets, with SHAP for explainable AI interpretation.</p><p>Contributed to data curation, investigation, visualization, and manuscript review and editing.</p><ul class="tags" aria-label="Technologies"><li>Machine learning</li><li>Deep learning</li><li>XAI</li><li>SHAP</li></ul><div class="project-links"><a href="https://github.com/mohaiminulnirob/explainable-ml-social_media-academic_performance.git" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://drive.google.com/drive/folders/112iF6B_HWzLZTgTAaPpnBkPnN_hkgIwH?usp=sharing" target="_blank" rel="noopener noreferrer">Paper status <span aria-hidden="true">↗</span></a></div></article>
+<article class="project-box" data-project-category="software"><div class="card-topline"><span class="card-kicker">Web development</span><span class="session">Oct 2025 – Nov 2025</span></div><h3>Smart Waste Management System</h3><p>A full-stack waste collection and recycling platform connecting citizens, workers, and administrators.</p><p>Built JWT authentication, role-based access and notifications, request tracking, uploads, OTP verification, rewards, and feedback and ratings.</p><ul class="tags" aria-label="Technologies"><li>HTML / CSS</li><li>JavaScript</li><li>Node.js</li><li>Express</li><li>MySQL</li><li>JWT</li></ul><div class="project-links"><a href="https://github.com/sadianusratmunny51/Web_Project_330.git" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div></article>
+<article class="project-box" data-project-category="software"><div class="card-topline"><span class="card-kicker">Mobile development</span><span class="session">Feb 2025 – Jun 2025</span></div><h3>TrackEase</h3><p>A productivity app bringing task scheduling, expense tracking, location tracking, and notifications into one place.</p><p>Implemented task calendars, monthly summaries, expense filtering, and productivity and spending charts. Integrated Firebase authentication, cloud data, and notifications.</p><ul class="tags" aria-label="Technologies"><li>Flutter</li><li>Dart</li><li>Firebase</li><li>Google Maps</li><li>Provider</li><li>fl_chart</li></ul><div class="project-links"><a href="https://github.com/sadianusratmunny51/SWE250_Project.git" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div></article>
+<article class="project-box" data-project-category="research"><div class="card-topline"><span class="card-kicker">Research</span><span class="session">Jul 2026 – Present</span></div><h3>Legal-RAG-BD</h3><p class="project-status"><span class="status-dot" aria-hidden="true"></span>Research in progress</p><p>Developing a Bangladesh-focused legal AI system for multi-step reasoning.</p><p>Combines evidence-grounded retrieval, clarification, and uncertainty-aware responses to improve the reliability of legal assistance.</p><ul class="tags" aria-label="Technologies"><li>LLMs</li><li>RAG</li><li>Agent orchestration</li></ul><div class="project-links"><a href="https://github.com/mohaiminulnirob/Legal-RAG-BD.git" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div></article>
+<article class="project-box" data-project-category="games"><div class="card-topline"><span class="card-kicker">Game development</span><span class="session">Jul 2024 – Sep 2024</span></div><h3>Soaring Adventure</h3><p>A multi-level 2D arcade game with obstacle avoidance, coins, bonus items, and scoring.</p><p>Implemented level progression, collision handling, game-over and restart mechanics, sound effects, and Night Mode.</p><ul class="tags" aria-label="Technologies"><li>Java</li><li>LibGDX</li></ul><div class="project-links"><a href="https://github.com/sadianusratmunny51/SWE224GAME.git" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div></article>
+        </div></div>
+      </div>
+      <div class="additional-projects"><h3 class="column-heading">More things I’ve built</h3><div class="additional-grid">
+        <article class="mini-project" data-project-category="games"><span class="card-kicker">Game · SDL / SDL2</span><h4>Snake Game</h4><p>Classic snake gameplay with collision detection, obstacles, and bonus points.</p><a href="https://github.com/sadianusratmunny51/snake-2021831051.git" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></article>
+        <article class="mini-project" data-project-category="software"><span class="card-kicker">Desktop · Java Swing</span><h4>Calculator App</h4><p>A Java desktop calculator with a graphical interface.</p><a href="https://github.com/sadianusratmunny51/Calculator-SWE224.git" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></article>
+        <article class="mini-project" data-project-category="software"><span class="card-kicker">Application</span><h4>Task Manager</h4><p>A profile-based application for managing tasks.</p><a href="https://github.com/sadianusratmunny51/Profile-based-CURD-APP.git" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></article>
+        <article class="mini-project" data-project-category="software"><span class="card-kicker">Web · HTML / CSS / JS</span><h4>Personal Portfolio</h4><p>A responsive home for my projects, skills, and engineering journey.</p><a href="https://port-folio-ruddy-one.vercel.app/" target="_blank" rel="noopener noreferrer">Live site <span aria-hidden="true">↗</span></a></article>
+      </div></div>
+    </section>
 
-     <!-- skills -->
-      <section class="skills" id="skills">
-            <h2 class="heading">My <span>Skills</span></h2>
-            <div class="skills-content">
-                <div class="content">
-                    <div class="inner-heading"><h3 style="font-size: 3rem;">Expertise</h3></div> 
-                    <div class="inner-content">
-                       <h1 class="title"> Problem Solving</h1>
-                       <p>
-                        Demonstrated strong passion for problem solving by successfully solving over 1100 problems on various online coding platforms, showcasing analytical thinking and persistence.
-
-                       </p>
-                       <span>
-                        <button class="bttn" id="stopstalk-btn">stopstalk</button>
-                        <button class="bttn" id="contents-btn">contents</button>
-                       </span>
-                    </div>
-                     <div class="inner-content">
-                       <h1 class="title">Web Development</h1>
-                       <p>
-                        Began web development journey by designing and building several small projects, gaining practical experience with front-end and back-end technologies.
-                       </p>
-                       <span>
-                        <button class="bttn" id="web-btn">Github Repo</button>
-                       </span>
-                    </div>
-                    <div class="inner-content">
-                       <h1 class="title"> Game Development</h1>
-                       <p>
-                        Developed two games, applying programming skills and creativity to design engaging user experiences.
-                       </p>
-                       <span>
-                        <button class="bttn" id="game-btn">Github Repo</button>
-                       </span>
-                    </div>
-                    <div class="inner-content">
-                       <h1 class="title" class="bttn">App Development</h1>
-                       <p>
-                        Created one mobile application, gaining hands-on experience in app design and development.
-
-                       </p>
-                       <span>
-                        <button class="bttn" id="app-btn">Github Repo</button>
-                       </span>
-                    </div>
-
-                    
-                </div>
-
-                <div class="content">
-                <div class="inner-heading"><h3 style="font-size: 3rem;">Languages</h3></div>
-                <div class="languages-grid">
-                    <div class="inner-content" data-percent="90%"> 
-                        <i class="devicon-c-plain colored"></i>
-                        <span>C</span>
-                            <div class="progress-container">
-                                <div class="progress-bar"></div>
-                                <div class="percent-text"></div>
-                            </div>
-                             <!-- <div class="percent-text"></div> -->
-
-    
-                    </div>
-                    <div class="inner-content " data-percent="100%"> 
-                        <i class="devicon-cplusplus-plain colored"></i>
-                        <span>C++</span>
-                            <div class="progress-container">
-                                <div class="progress-bar"></div>
-                                <div class="percent-text"></div>
-                            </div>
-                    </div>
-                    <div class="inner-content" data-percent="90%" > 
-                        <i class="devicon-java-plain colored"></i>
-                        <span>Java</span>
-                        <div class="progress-container">
-                                <div class="progress-bar"></div>
-                                <div class="percent-text"></div>
-                        </div>
-
-                    </div>
-                    <div class="inner-content"  data-percent="90%"> 
-                        <i class="devicon-html5-plain colored"></i>
-                        <span>HTML</span>
-                        <div class="progress-container">
-                                <div class="progress-bar"></div>
-                                <div class="percent-text"></div>
-                        </div>
-                    </div>
-                    <div class="inner-content" data-percent="90%"> 
-                        <i class="devicon-css3-plain colored"></i>
-                        <span>CSS</span>
-                        <div class="progress-container">
-                                <div class="progress-bar"></div>
-                                <div class="percent-text"></div>
-                        </div>
-                    </div>
-                    <div class="inner-content" data-percent="80%"> 
-                        <i class="devicon-javascript-plain colored"></i>
-                        <span>JS</span>
-                        <div class="progress-container">
-                                <div class="progress-bar"></div>
-                                <div class="percent-text"></div>
-                        </div>
-                    </div>
-                    <div class="inner-content" data-percent="40%"> 
-                        <i class="devicon-python-plain colored"></i>
-                        <span>Python</span>
-                        <div class="progress-container">
-                                <div class="progress-bar"></div>
-                                <div class="percent-text"></div>
-                         </div>
-                    </div>
-                    <div class="inner-content" data-percent="60%"> 
-                        <i class="devicon-dart-plain colored"></i>
-                        <span>Dart</span>
-                        <div class="progress-container">
-                                <div class="progress-bar"></div>
-                                <div class="percent-text"></div>
-                        </div>
-                    </div>
-                    <div class="inner-content" data-percent="30%"> 
-                        <i class="devicon-mysql-plain colored"></i>
-                        <span>SQL</span>
-                        <div class="progress-container">
-                                <div class="progress-bar"></div>
-                                <div class="percent-text"></div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-
-                </div>
-            </div>
-            
-            
-
-        
-      </section>
-
-      <!-- projects -->
-       <section class="projects" id="projects">
-            <h2 class="heading">My <span>Projects</span></h2>
-
-            <div class="projects-container">
-                <!-- Recent Project -->
-                <div class="recent-project-section">
-                <h3 class="project-title">Recent Project</h3>
-                <div class="recent-project">
-                    <h1 title="heading">Mobile Application : TracEase and Notify</h1>
-                    <p class="about">
-                        Developed a cross-platform mobile application using <span style="color:aquamarine; font-size: 2rem;">Flutter and Dart</span>,
-                         delivering a smooth, responsive, and visually appealing user experience.
-                          Designed with clean architecture and efficient code for optimal performance.
-                           Focused on  <span style="color:aquamarine; font-size: 2rem;">Intutive UI/UX</span> and continuous feature enhancements to meet user needs.
-
-                    </p>
-                    <h2>Key features</h2>
-                    <ul class="features-list">
-                        <li> Daily Activity Tracker </li>
-                        <li> Monthly Activity Tracker </li>
-                        <li> Analyzing performance Of Monthly and weekly Activities</li>
-                        <li> Daily Expense Tracker </li>
-                        <li> Monthly Expense Tracker </li>
-                        <li> Analyzing performance Of Monthly and weekly Expense</li>
-                        <li> Chart Generator</li>
-                        <li> Location Tracker</li>
-                        <li>Notification Management</li>
-                        
-
-
-                    </ul>
-                     <span>
-                        <button class="bttn" id="vie-app-ui-btn">  View App UI</button>
-                        <button class="bttn" id="tracease-btn">Github repo</button>
-                    </span>
-
-
-                </div>
-                </div>
-
-                <!-- Other Projects -->
-                <div class="other-projects-section">
-                <h3 class="project-title">Other Projects</h3>
-                <div class="other-projects">
-                    <div class="project-box">
-                        <h1 class="title">Game: Soaring Adventure</h1>
-                        <h2 class="frame">Famework: LibGDX</h2>
-                        <p class="abt">
-                        Created a [Game Type] (e.g., 2D platformer) 
-                                utilizing LibGDX for game statemanagement, animation, and input handling
-
-                        </p>
-                        <span>
-                        <button class="bttn" id="soaring-btn">Github Repo</button>
-                       </span>
-
-                        
-                    </div>
-                    <div class="project-box">
-                        <h1 class="title">Game: Snake Game</h1>
-                         <h2 class="frame">Famework: SDL/SDL2</h2>
-
-                        <p class="abt">
-                        I have developed a classic Snake game with 
-                        core game logic, collision detection , bonus point giving, obstacle hindrance , and  SDL/SDL2 rendering.
-                        </p>
-
-                          <span>
-                        <button class="bttn" id="snake-btn">Github Repo</button>
-                       </span>
-
-
-                    </div>
-                    <div class="project-box">
-                        <h1 class="title">Resume: Portfolio Responsive</h1>
-                         <h2 class="frame">Famework: HTML CSS JS</h2>
-                        <p class="abt">
-                             I have build a portfolio site using the basic core concepts details of HTML, CSS, JavaScript.
-                             I have made it responsive also.
-                        </p>
-                        <span>
-                        <button class="bttn" id="portfolio-btn">Github Repo</button>
-                       </span>
-
-                    </div>
-                    <div class="project-box">
-                        <h1 class="title">Java Project:Calculator</h1>
-                         <h2 class="frame">Famework: Java Swing</h2>
-                        <p class="abt">
-
-                        </p>
-
-                        <span>
-                        <button class="bttn" id="calc-btn">Github Repo</button>
-                       </span>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- contact me -->
-         <section class="contact" id="contact">
-                <h2 class="heading">Contact <span>Me</span></h2>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <h3 class="title">Contact Info</h3>
-                        <div class="info-item">
-                            <i class='bx bxs-phone'></i>
-                            <span>01709901364</span>
-                        </div>
-                        <div class="info-item">
-                            <i class='bx bxl-gmail'></i>
-                            <span>sadiamunny51@gmail.com</span>
-                        </div>
-                        <div class="info-item">
-                            <i class='bx bxl-facebook'></i>
-                            <span>facebook.com/sadianusratmunni</span>
-                        </div>
-                        <div class="info-item">
-                            <i class='bx bxl-github'></i>
-                            <span>github.com/sadianusratmunny51</span>
-                        </div>
-                        <div class="info-item">
-                            <i class='bx bxs-map'></i>
-                            <span>Baliadangi,Thakurgaon</span>
-                        </div>
-                        <div class="social-media-contact">
-                            <a href="#"><i class='bx bxl-facebook'></i></a>
-                            <a href="#"><i class='bx bxl-github'></i></a>
-                            <a href="#"><i class='bx bxl-envelope'></i></a>
-                            <a href="#"><i class='bx bxs-phone-call'></i></a>
-                        </div>
-                    </div>
-
-                    <div class="contact-form">
-                        <h3 class="title">Send Me a Message</h3>
-                        <form action="#">
-                            <input type="text" placeholder="Your Name">
-                            <input type="email" placeholder="Your Email">
-                            <input type="text" placeholder="Subject">
-                            <textarea name="message" id="" cols="30" rows="5" placeholder="Your Message"></textarea>
-                            <input type="submit" value="Send Message" class="btn">
-                        </form>
-                    </div>
-                </div>
-        </section>
-
-
-
-
-
-
-
-    <script src="script.js"></script>
+    <section class="contact section-shell" id="contact" aria-labelledby="contact-title">
+      <div class="section-heading"><p class="eyebrow">05 / Start a conversation</p><h2 class="heading" id="contact-title">Let’s <span>connect.</span></h2><p>Have a project in mind, a research question, or an opportunity to share?</p></div>
+      <div class="contact-content">
+        <div class="contact-info"><h3>Good ideas start<br>with a hello.</h3><p>I’d love to hear about what you’re working on. Get in touch to talk about software, research, or collaboration.</p><dl class="contact-details"><div><dt>Email</dt><dd><a href="mailto:sadiamunny51@gmail.com">sadiamunny51@gmail.com <span aria-hidden="true">↗</span></a></dd></div><div><dt>Phone</dt><dd><a href="tel:+8801756246414">+880 1756 246414</a></dd></div><div><dt>Location</dt><dd>Sylhet, Bangladesh</dd></div></dl><div class="social-media-contact"><a href="https://github.com/sadianusratmunny51" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://linkedin.com/in/sadia-nusrat-munny-a669b0435/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://codeforces.com/profile/InfiniteBugs" target="_blank" rel="noopener noreferrer">Codeforces <span aria-hidden="true">↗</span></a></div><a class="text-link" href="Munny_CV_v3.pdf" download>Download my CV <span aria-hidden="true">↓</span></a></div>
+        <div class="contact-form"><h3>Send a message</h3><p id="email-note">This opens a draft in your email app so you can review and send it.</p><form id="contact-form" action="mailto:sadiamunny51@gmail.com" method="get" aria-describedby="email-note"><div class="form-row"><div><label for="contact-name">Your name</label><input id="contact-name" name="name" autocomplete="name" placeholder="Jane Doe" maxlength="100" required></div><div><label for="contact-email">Your email</label><input id="contact-email" name="email" type="email" autocomplete="email" placeholder="jane@example.com" maxlength="254" required></div></div><label for="contact-subject">Subject</label><input id="contact-subject" name="subject" placeholder="Let’s build something together" maxlength="160" required><label for="contact-message">Message</label><textarea id="contact-message" name="body" rows="5" placeholder="Tell me a little about your idea…" maxlength="4000" required></textarea><button class="btn primary" type="submit">Open email draft <span aria-hidden="true">↗</span></button><p id="form-status" class="form-status" role="status" aria-live="polite"></p></form></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><a class="logo" href="#home">sadia<span>.</span><span class="logo-surname">munny</span></a><p>© <span id="current-year">2026</span> Sadia Nusrat Munny. Built with care.</p><a href="#home">Back to top <span aria-hidden="true">↑</span></a></footer>
 </body>
 </html>
